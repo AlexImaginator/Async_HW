@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  db:
+    image: postgres:14.1
+    environment:
+      POSTGRES_PASSWORD: asyncpasws
+      POSTGRES_USER: asyntest
+      POSTGRES_DB: db_app
+    ports:
+      - "5431:5432"
